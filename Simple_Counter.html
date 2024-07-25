@@ -1,0 +1,35 @@
+<!DOCTYPE htm>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Counter</title>
+    <link rel="stylesheet" href="Simple_Couner.css" />
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <button onclick="incr()">+</button>
+    <button onclick="decr()">-</button>
+    <button onclick="reset()">reset</button>
+    <script>
+      let a = 0;
+      function incr() {
+        a++;
+        let count = document.getElementById("counter");
+        count.innerHTML = a;
+        return a;
+      }
+
+      function decr() {
+        a--;
+        let count = document.getElementById("counter");
+        count.innerHTML = a;
+      }
+      function reset() {
+        a = 0;
+        let count = document.getElementById("counter");
+        count.innerHTML = a;
+        return a;
+      }
+    </script>
+  </body>
+</html>
